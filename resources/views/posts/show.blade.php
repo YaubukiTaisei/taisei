@@ -10,7 +10,7 @@
     </head>
     <body class="antialiased">
         <h1 class='title'>
-          {{ $post->title }}
+            {{ $post->title }}
         </h1>
         <div class='content'>
             <div class='content_post'>
@@ -18,8 +18,11 @@
                 <p class='body'>{{ $post->body }}</p>
             </div>
         </div>
-        <div class='footer'>
-            <a href="/">戻る</a>   
+        <div class='edit'>
+            <a href="/posts/{{ $post->id }}/edit">edit</a>   
+    　  </div>
+    　  <div class='footer'>
+    　    　 <a href="/">戻る</a>
     　  </div>
     </body>
 </html>
