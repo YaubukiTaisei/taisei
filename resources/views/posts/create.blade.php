@@ -8,6 +8,10 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
    
     </head>
+    <x-app-layout>
+        <x-slot name="header">
+            Dashboard
+        </x-slot>
     <body class="antialiased">
         <h1>Blog Name</h1>
         <form action="/posts" method="POST">
@@ -36,4 +40,5 @@
             <a href="/">戻る</a>   
         </div>
     </body>
+    </x-app-layout>
 </html>
